@@ -3,167 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Nebuď Lama!!</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
-}
+<script src="data.js"></script>
 
-body{
-background:#0d0d0d;
-color:#fff;
-}
-
-.login-screen{
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
-background:linear-gradient(135deg,#0d0d0d,#1a1a1a);
-}
-
-.login-box{
-width:450px;
-background:#171717;
-padding:40px;
-border-radius:20px;
-border:1px solid #333;
-box-shadow:0 0 30px rgba(138,43,226,.3);
-text-align:center;
-}
-
-.logo{
-font-size:52px;
-font-weight:900;
-color:#a855f7;
-margin-bottom:15px;
-}
-
-.subtitle{
-color:#999;
-margin-bottom:25px;
-}
-
-input{
-width:100%;
-padding:15px;
-background:#222;
-border:none;
-border-radius:10px;
-color:white;
-font-size:18px;
-margin-bottom:20px;
-}
-
-button{
-width:100%;
-padding:15px;
-border:none;
-border-radius:10px;
-background:#8b5cf6;
-color:white;
-font-size:18px;
-cursor:pointer;
-}
-
-button:hover{
-background:#a855f7;
-}
-
-#app{
-display:none;
-height:100vh;
-}
-
-.layout{
-display:flex;
-height:100vh;
-}
-
-.sidebar{
-width:340px;
-background:#171717;
-overflow-y:auto;
-border-right:1px solid #2a2a2a;
-padding:20px;
-}
-
-.sidebar h2{
-margin-bottom:20px;
-color:#a855f7;
-}
-
-.brand{
-margin-top:15px;
-font-weight:bold;
-color:#fff;
-}
-
-.model{
-padding:8px 0 8px 15px;
-cursor:pointer;
-color:#aaa;
-}
-
-.model:hover{
-color:#fff;
-}
-
-.content{
-flex:1;
-padding:30px;
-overflow-y:auto;
-}
-
-.breadcrumb{
-font-size:28px;
-margin-bottom:25px;
-font-weight:bold;
-}
-
-.placeholder{
-height:250px;
-border:2px dashed #444;
-border-radius:15px;
-display:flex;
-justify-content:center;
-align-items:center;
-color:#777;
-font-size:18px;
-}
-
-.category{
-margin-bottom:20px;
-}
-
-</style>
 </head>
+
 <body>
 
-<div class="login-screen" id="login">
+<div id="loginScreen">
 
-<div class="login-box">
+<div class="loginLeft">
 
-<div class="logo">NEBUĎ LAMA!!</div>
+<div style="text-align:center;">
+
+<h1 style="font-size:80px;color:#a855f7;">
+NEBUĎ LAMA!!
+</h1>
+
+<p style="color:#aaa;font-size:20px;">
+Privátní katalog
+</p>
+
+<p style="margin-top:30px;color:#666;">
+Sem později vložíme obrázek lamy
+</p>
+
+</div>
+
+</div>
+
+<div class="loginRight">
+
+<div class="loginBox">
+
+<div class="logo">
+NEBUĎ LAMA!!
+</div>
 
 <div class="subtitle">
 Vstup do katalogu
 </div>
 
 <input
+id="password"
+class="passwordInput"
 type="password"
-id="heslo"
-placeholder="Zadej heslo">
+placeholder="Heslo">
 
-<button onclick="prihlasit()">
+<button
+class="loginBtn"
+onclick="login()">
 Vstoupit
 </button>
+
+</div>
 
 </div>
 
@@ -175,9 +71,20 @@ Vstoupit
 
 <div class="sidebar">
 
-<h2>Nebuď Lama!!</h2>
+<div class="sidebarHeader">
+NEBUĎ LAMA!!
+</div>
 
-<div id="menu"></div>
+<div class="searchBox">
+
+<input
+id="search"
+class="searchInput"
+placeholder="Hledat model...">
+
+</div>
+
+<div id="menu" class="menu"></div>
 
 </div>
 
@@ -187,8 +94,12 @@ Vstoupit
 Vyber model z menu
 </div>
 
-<div class="placeholder">
+<div id="gallery" class="gallery">
+
+<div class="photo">
 Fotografie doplníš později
+</div>
+
 </div>
 
 </div>
@@ -199,12 +110,15 @@ Fotografie doplníš později
 
 <script>
 
-function prihlasit(){
+function login(){
 
-if(document.getElementById('heslo').value==="007"){
+const pass =
+document.getElementById("password").value;
 
-document.getElementById('login').style.display='none';
-document.getElementById('app').style.display='block';
+if(pass==="007"){
+
+document.getElementById("loginScreen").style.display="none";
+document.getElementById("app").style.display="block";
 
 }else{
 
@@ -214,198 +128,131 @@ alert("Špatné heslo");
 
 }
 
-const data = {
+const menu =
+document.getElementById("menu");
 
-"OBUV":{
+function renderMenu(filter=""){
 
-"Adidas":[
-"Bad Bunny x Gazelle Indoor San Juan",
-"Campus",
-"Gazelle Classic",
-"Gazelle Gucci",
-"SL 72",
-"Spezial"
-],
+menu.innerHTML="";
 
-"Balenciaga":[
-"Balenciaga 2.0",
-"Balenciaga Track 3"
-],
+for(const category in katalog){
 
-"Converse":[
-"Converse All Star"
-],
+const cat=document.createElement("div");
+cat.className="category";
 
-"Crocs":[
-"Crocs Bape"
-],
+cat.innerHTML=
+'<div class="categoryTitle">'+
+category+
+'</div>';
 
-"DC Shoes":[
-"DC Shoes"
-],
+for(const brand in katalog[category]){
 
-"Dior":[
-"Dior B23 Oblique"
-],
+let found=false;
 
-"Dolce & Gabbana":[
-"Portofino"
-],
+katalog[category][brand].forEach(model=>{
 
-"Karl Lagerfeld":[
-"Kapri Iconic"
-],
-
-"Lacoste":[
-"Powercourt"
-],
-
-"New Balance":[
-"New Balance 1000",
-"New Balance 574 Legacy Stone Island",
-"New Balance 9060",
-"New Balance 998"
-],
-
-"Nike":[
-"Air Force 1 Supreme",
-"Air Jordan 4",
-"Air Jordan 4 Kaws",
-"Air Jordan 4 Retro Pizza",
-"Air Max 1",
-"Air Max 270",
-"Kobe 8 Protro",
-"Nike Air Zoom",
-"Nike V5 RNR",
-"OFF-WHITE Vulc Low"
-],
-
-"On Running":[
-"ON CLOUD 6"
-],
-
-"Puma":[
-"Puma Suede XL"
-],
-
-"Salomon":[
-"MM6 Maison Margiela x Salomon X-ALP",
-"Salomon XT-6 Copen Blue",
-"Salomon Trekking"
-],
-
-"Timberland":[
-"Timberland",
-"Timberland Bape",
-"Timberland Outdoor"
-],
-
-"Vans":[
-"Vans Knu Skool"
-]
-
-},
-
-"TEXTIL":{
-
-"Bundy":[
-"Arc'teryx",
-"BAPE Coca-Cola",
-"Nike ACG Skull Peak",
-"Lacoste",
-"Ralph Lauren"
-],
-
-"Mikiny":[
-"BAPE",
-"Carhartt",
-"Essentials",
-"Gant",
-"GAP",
-"Jil Sander",
-"Ralph Lauren"
-],
-
-"Trička":[
-"Balenciaga",
-"BAPE",
-"Corteiz World Rules",
-"Gant",
-"Jil Sander",
-"Karl Lagerfeld",
-"Maison Margiela",
-"Nike Nocta",
-"Ralph Lauren"
-]
-
-},
-
-"OSTATNÍ":{
-
-"Batohy / Tašky":[
-"Adidas",
-"BAPE",
-"Carhartt",
-"Sprayground",
-"Supreme"
-],
-
-"Pásky":[
-"Carhartt",
-"Dickies"
-],
-
-"Brýle":[
-"Ray-Ban"
-],
-
-"Termosky":[
-"Stanley"
-]
-
+if(
+model.toLowerCase()
+.includes(filter.toLowerCase())
+){
+found=true;
 }
-
-};
-
-const menu = document.getElementById("menu");
-
-for(let category in data){
-
-let block = document.createElement("div");
-block.className="category";
-
-block.innerHTML=`<h3>${category}</h3>`;
-
-for(let brand in data[category]){
-
-let brandDiv=document.createElement("div");
-brandDiv.className="brand";
-brandDiv.innerText=brand;
-
-block.appendChild(brandDiv);
-
-data[category][brand].forEach(model=>{
-
-let modelDiv=document.createElement("div");
-modelDiv.className="model";
-modelDiv.innerText=model;
-
-modelDiv.onclick=()=>{
-
-document.getElementById("breadcrumb").innerText=
-category+" / "+brand+" / "+model;
-
-};
-
-block.appendChild(modelDiv);
 
 });
 
+if(
+filter!=="" &&
+!found
+){
+continue;
 }
 
-menu.appendChild(block);
+const brandDiv=
+document.createElement("div");
+
+brandDiv.className="brand";
+brandDiv.innerText=brand;
+
+const modelsDiv=
+document.createElement("div");
+
+modelsDiv.className="brandModels";
+
+brandDiv.onclick=()=>{
+
+modelsDiv.style.display=
+modelsDiv.style.display==="block"
+?
+"none"
+:
+"block";
+
+};
+
+katalog[category][brand]
+.forEach(model=>{
+
+if(
+filter!=="" &&
+!model.toLowerCase()
+.includes(filter.toLowerCase())
+){
+return;
+}
+
+const modelDiv=
+document.createElement("div");
+
+modelDiv.className="model";
+modelDiv.innerText=model;
+
+modelDiv.onclick=(e)=>{
+
+e.stopPropagation();
+
+document.getElementById(
+"breadcrumb"
+).innerText=
+category+
+" / "+
+brand+
+" / "+
+model;
+
+document.getElementById(
+"gallery"
+).innerHTML=
+'<div class="photo">Fotky modelu: '
++
+model+
+'</div>';
+
+};
+
+modelsDiv.appendChild(modelDiv);
+
+});
+
+cat.appendChild(brandDiv);
+cat.appendChild(modelsDiv);
 
 }
+
+menu.appendChild(cat);
+
+}
+
+}
+
+renderMenu();
+
+document
+.getElementById("search")
+.addEventListener("input",e=>{
+
+renderMenu(e.target.value);
+
+});
 
 </script>
 
