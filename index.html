@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Nebuď Lama!!</title>
 
 <link rel="stylesheet" href="style.css">
 <script src="data.js"></script>
 
 </head>
-
 <body>
 
 <div id="loginScreen">
@@ -23,7 +20,7 @@ NEBUĎ<br>LAMA!!
 </div>
 
 <div class="subtitle">
-Privátní katalog sneakers, textilu a doplňků
+Privátní katalog
 </div>
 
 <input
@@ -53,12 +50,10 @@ NEBUĎ LAMA!!
 </div>
 
 <div class="searchBox">
-
 <input
 id="search"
 class="searchInput"
-placeholder="🔍 Hledat model...">
-
+placeholder="🔍 Hledat">
 </div>
 
 <div id="menu" class="menu"></div>
@@ -67,11 +62,25 @@ placeholder="🔍 Hledat model...">
 
 <div class="content">
 
-<div id="breadcrumb" class="breadcrumb">
-Vyber model z menu
+<div class="topbar">
+
+<div
+id="breadcrumb"
+class="breadcrumb">
+Vyber model
 </div>
 
-<div id="gallery" class="gallery">
+<button
+class="logoutBtn"
+onclick="logout()">
+Odhlásit
+</button>
+
+</div>
+
+<div
+id="gallery"
+class="gallery">
 
 <div class="photo">
 Vyber model vlevo
@@ -89,10 +98,10 @@ Vyber model vlevo
 
 function login(){
 
-const pass =
-document.getElementById("password").value;
-
-if(pass==="007"){
+if(
+document.getElementById("password").value
+==="007"
+){
 
 document.getElementById(
 "loginScreen"
@@ -110,6 +119,18 @@ alert("Špatné heslo");
 
 }
 
+function logout(){
+
+document.getElementById(
+"app"
+).style.display="none";
+
+document.getElementById(
+"loginScreen"
+).style.display="flex";
+
+}
+
 const menu =
 document.getElementById("menu");
 
@@ -119,13 +140,12 @@ menu.innerHTML="";
 
 for(const category in katalog){
 
-const categoryBlock =
+const block =
 document.createElement("div");
 
-categoryBlock.className =
-"category";
+block.className="category";
 
-categoryBlock.innerHTML =
+block.innerHTML=
 '<div class="categoryTitle">'+
 category+
 '</div>';
@@ -148,26 +168,25 @@ found=true;
 
 });
 
-if(filter!=="" && !found){
+if(filter && !found){
 continue;
 }
 
-const brandDiv =
+const brandDiv=
 document.createElement("div");
 
 brandDiv.className="brand";
-brandDiv.innerText=brand;
+brandDiv.innerHTML="▶ "+brand;
 
-const modelsDiv =
+const models=
 document.createElement("div");
 
-modelsDiv.className=
-"brandModels";
+models.className="brandModels";
 
 brandDiv.onclick=()=>{
 
-modelsDiv.style.display=
-modelsDiv.style.display==="block"
+models.style.display=
+models.style.display==="block"
 ?
 "none"
 :
@@ -179,7 +198,7 @@ katalog[category][brand]
 .forEach(model=>{
 
 if(
-filter!=="" &&
+filter &&
 !model.toLowerCase()
 .includes(
 filter.toLowerCase()
@@ -188,55 +207,59 @@ filter.toLowerCase()
 return;
 }
 
-const modelDiv =
+const item=
 document.createElement("div");
 
-modelDiv.className="model";
-modelDiv.innerText=model;
+item.className="model";
+item.innerText=model;
 
-modelDiv.onclick=(e)=>{
+item.onclick=(e)=>{
 
 e.stopPropagation();
 
-document.getElementById(
+document
+.querySelectorAll(".model")
+.forEach(m=>
+m.classList.remove("active")
+);
+
+item.classList.add("active");
+
+document
+.getElementById(
 "breadcrumb"
-).innerText=
+)
+.innerText=
 category+
 " / "+
 brand+
 " / "+
 model;
 
-document.getElementById(
+document
+.getElementById(
 "gallery"
-).innerHTML=
+)
+.innerHTML=
 `
 <div class="photo">${model}</div>
-<div class="photo">Fotografie 2</div>
-<div class="photo">Fotografie 3</div>
+<div class="photo">Foto 2</div>
+<div class="photo">Foto 3</div>
+<div class="photo">Foto 4</div>
 `;
 
 };
 
-modelsDiv.appendChild(
-modelDiv
-);
+models.appendChild(item);
 
 });
 
-categoryBlock.appendChild(
-brandDiv
-);
-
-categoryBlock.appendChild(
-modelsDiv
-);
+block.appendChild(brandDiv);
+block.appendChild(models);
 
 }
 
-menu.appendChild(
-categoryBlock
-);
+menu.appendChild(block);
 
 }
 
@@ -248,11 +271,7 @@ document
 .getElementById("search")
 .addEventListener(
 "input",
-e=>{
-renderMenu(
-e.target.value
-);
-}
+e=>renderMenu(e.target.value)
 );
 
 </script>
