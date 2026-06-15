@@ -137,6 +137,16 @@ document.getElementById(
 const menu =
 document.getElementById("menu");
 
+function getFolderCategory(category){
+
+if(category==="OBUV") return "Obuv";
+if(category==="TEXTIL") return "Textil";
+if(category==="OSTATNI") return "Ostatni";
+
+return category;
+
+}
+
 function createGallery(category,brand,model){
 
 const gallery =
@@ -144,23 +154,31 @@ document.getElementById("gallery");
 
 gallery.innerHTML="";
 
-for(let i=1;i<=30;i++){
+const folderCategory =
+getFolderCategory(category);
+
+let imagesFound = 0;
+
+for(let i=1;i<=50;i++){
 
 const number =
 String(i).padStart(2,"0");
 
 const imagePath =
-`images/${category}/${brand}/${model}/${number}.webp`;
+`images/${folderCategory}/${brand}/${model}/${number}.webp`;
 
 const img =
 document.createElement("img");
 
 img.src=imagePath;
 
-img.style.width="100%";
-img.style.height="320px";
-img.style.objectFit="cover";
-img.style.borderRadius="18px";
+img.className="galleryImage";
+
+img.onload=()=>{
+
+imagesFound++;
+
+};
 
 img.onerror=()=>{
 
@@ -171,6 +189,23 @@ img.remove();
 gallery.appendChild(img);
 
 }
+
+setTimeout(()=>{
+
+if(imagesFound===0){
+
+gallery.innerHTML=
+`
+<div class="photo">
+Nenalezeny žádné fotografie.<br><br>
+Očekávaná cesta:<br>
+images/${folderCategory}/${brand}/${model}/01.webp
+</div>
+`;
+
+}
+
+},1000);
 
 }
 
