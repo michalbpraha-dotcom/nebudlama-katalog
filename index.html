@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -97,7 +98,28 @@ Vyber model vlevo
 
 </div>
 
+<div id="lightbox" class="lightbox">
+
+<div class="closeBtn" onclick="closeLightbox()">
+×
+</div>
+
+<div class="navBtn prevBtn" onclick="prevImage()">
+❮
+</div>
+
+<img id="lightboxImage">
+
+<div class="navBtn nextBtn" onclick="nextImage()">
+❯
+</div>
+
+</div>
+
 <script>
+
+let currentImages=[];
+let currentIndex=0;
 
 function login(){
 
@@ -154,6 +176,8 @@ document.getElementById("gallery");
 
 gallery.innerHTML="";
 
+currentImages=[];
+
 const folderCategory =
 getFolderCategory(category);
 
@@ -177,6 +201,16 @@ img.className="galleryImage";
 img.onload=()=>{
 
 imagesFound++;
+
+currentImages.push(imagePath);
+
+img.onclick=()=>{
+
+openLightbox(
+currentImages.indexOf(imagePath)
+);
+
+};
 
 };
 
@@ -206,6 +240,60 @@ images/${folderCategory}/${brand}/${model}/01.webp
 }
 
 },1000);
+
+}
+
+function openLightbox(index){
+
+currentIndex=index;
+
+document
+.getElementById("lightbox")
+.classList.add("active");
+
+document
+.getElementById("lightboxImage")
+.src=currentImages[currentIndex];
+
+}
+
+function closeLightbox(){
+
+document
+.getElementById("lightbox")
+.classList.remove("active");
+
+}
+
+function nextImage(){
+
+if(currentImages.length===0) return;
+
+currentIndex++;
+
+if(currentIndex>=currentImages.length){
+currentIndex=0;
+}
+
+document
+.getElementById("lightboxImage")
+.src=currentImages[currentIndex];
+
+}
+
+function prevImage(){
+
+if(currentImages.length===0) return;
+
+currentIndex--;
+
+if(currentIndex<0){
+currentIndex=currentImages.length-1;
+}
+
+document
+.getElementById("lightboxImage")
+.src=currentImages[currentIndex];
 
 }
 
@@ -349,7 +437,34 @@ e.target.value
 )
 );
 
+document.addEventListener("keydown",e=>{
+
+if(e.key==="Escape"){
+closeLightbox();
+}
+
+if(e.key==="ArrowRight"){
+nextImage();
+}
+
+if(e.key==="ArrowLeft"){
+prevImage();
+}
+
+});
+
+document
+.getElementById("lightbox")
+.addEventListener("click",e=>{
+
+if(e.target.id==="lightbox"){
+closeLightbox();
+}
+
+});
+
 </script>
 
 </body>
 </html>
+```
