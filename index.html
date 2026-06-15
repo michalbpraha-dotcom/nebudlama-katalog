@@ -6,60 +6,34 @@
 <title>Nebuď Lama!!</title>
 
 <link rel="stylesheet" href="style.css">
-
 <script src="data.js"></script>
 
 </head>
-
 <body>
 
 <div id="loginScreen">
 
-<div class="loginLeft">
-
-<div style="text-align:center;">
-
-<h1 style="font-size:80px;color:#a855f7;">
-NEBUĎ LAMA!!
-</h1>
-
-<p style="color:#aaa;font-size:20px;">
-Privátní katalog
-</p>
-
-<p style="margin-top:30px;color:#666;">
-Sem později vložíme obrázek lamy
-</p>
-
-</div>
-
-</div>
-
-<div class="loginRight">
-
 <div class="loginBox">
 
 <div class="logo">
-NEBUĎ LAMA!!
+NEBUĎ<br>LAMA!!
 </div>
 
 <div class="subtitle">
-Vstup do katalogu
+Privátní katalog obuvi, textilu a doplňků
 </div>
 
 <input
 id="password"
 class="passwordInput"
 type="password"
-placeholder="Heslo">
+placeholder="Zadej heslo">
 
 <button
 class="loginBtn"
 onclick="login()">
 Vstoupit
 </button>
-
-</div>
 
 </div>
 
@@ -80,7 +54,7 @@ NEBUĎ LAMA!!
 <input
 id="search"
 class="searchInput"
-placeholder="Hledat model...">
+placeholder="🔍 Hledat model...">
 
 </div>
 
@@ -97,7 +71,7 @@ Vyber model z menu
 <div id="gallery" class="gallery">
 
 <div class="photo">
-Fotografie doplníš později
+Vyber model vlevo
 </div>
 
 </div>
@@ -137,51 +111,69 @@ menu.innerHTML="";
 
 for(const category in katalog){
 
-const cat=document.createElement("div");
-cat.className="category";
+const categoryBlock =
+document.createElement("div");
 
-cat.innerHTML=
-'<div class="categoryTitle">'+
-category+
-'</div>';
+categoryBlock.className =
+"category";
+
+const categoryTitle =
+document.createElement("div");
+
+categoryTitle.className =
+"categoryTitle";
+
+categoryTitle.innerText =
+category;
+
+categoryBlock.appendChild(
+categoryTitle
+);
 
 for(const brand in katalog[category]){
 
-let found=false;
+let visible = false;
 
-katalog[category][brand].forEach(model=>{
+katalog[category][brand]
+.forEach(model=>{
 
 if(
 model.toLowerCase()
-.includes(filter.toLowerCase())
+.includes(
+filter.toLowerCase()
+)
 ){
-found=true;
+visible = true;
 }
 
 });
 
 if(
-filter!=="" &&
-!found
+filter !== "" &&
+!visible
 ){
 continue;
 }
 
-const brandDiv=
+const brandDiv =
 document.createElement("div");
 
-brandDiv.className="brand";
-brandDiv.innerText=brand;
+brandDiv.className =
+"brand";
 
-const modelsDiv=
+brandDiv.innerText =
+brand;
+
+const modelsDiv =
 document.createElement("div");
 
-modelsDiv.className="brandModels";
+modelsDiv.className =
+"brandModels";
 
-brandDiv.onclick=()=>{
+brandDiv.onclick = ()=>{
 
-modelsDiv.style.display=
-modelsDiv.style.display==="block"
+modelsDiv.style.display =
+modelsDiv.style.display === "block"
 ?
 "none"
 :
@@ -193,52 +185,81 @@ katalog[category][brand]
 .forEach(model=>{
 
 if(
-filter!=="" &&
+filter !== "" &&
 !model.toLowerCase()
-.includes(filter.toLowerCase())
+.includes(
+filter.toLowerCase()
+)
 ){
 return;
 }
 
-const modelDiv=
+const modelDiv =
 document.createElement("div");
 
-modelDiv.className="model";
-modelDiv.innerText=model;
+modelDiv.className =
+"model";
 
-modelDiv.onclick=(e)=>{
+modelDiv.innerText =
+model;
+
+modelDiv.onclick =
+(e)=>{
 
 e.stopPropagation();
 
-document.getElementById(
+document
+.getElementById(
 "breadcrumb"
-).innerText=
-category+
-" / "+
-brand+
-" / "+
+)
+.innerText =
+category +
+" / " +
+brand +
+" / " +
 model;
 
-document.getElementById(
+document
+.getElementById(
 "gallery"
-).innerHTML=
-'<div class="photo">Fotky modelu: '
-+
-model+
-'</div>';
+)
+.innerHTML =
+
+`
+<div class="photo">
+${model}
+</div>
+
+<div class="photo">
+Fotografie 2
+</div>
+
+<div class="photo">
+Fotografie 3
+</div>
+`;
 
 };
 
-modelsDiv.appendChild(modelDiv);
+modelsDiv.appendChild(
+modelDiv
+);
 
 });
 
-cat.appendChild(brandDiv);
-cat.appendChild(modelsDiv);
+categoryBlock.appendChild(
+brandDiv
+);
+
+categoryBlock.appendChild(
+modelsDiv
+);
 
 }
 
-menu.appendChild(cat);
+menu.appendChild(
+categoryBlock
+);
 
 }
 
@@ -248,11 +269,16 @@ renderMenu();
 
 document
 .getElementById("search")
-.addEventListener("input",e=>{
+.addEventListener(
+"input",
+(e)=>{
 
-renderMenu(e.target.value);
+renderMenu(
+e.target.value
+);
 
-});
+}
+);
 
 </script>
 
