@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nebuď Lama!!</title>
 
 <link rel="stylesheet" href="style.css">
 <script src="data.js"></script>
 
 </head>
+
 <body>
 
 <div id="loginScreen">
@@ -20,7 +23,7 @@ NEBUĎ<br>LAMA!!
 </div>
 
 <div class="subtitle">
-Privátní katalog obuvi, textilu a doplňků
+Privátní katalog sneakers, textilu a doplňků
 </div>
 
 <input
@@ -91,8 +94,13 @@ document.getElementById("password").value;
 
 if(pass==="007"){
 
-document.getElementById("loginScreen").style.display="none";
-document.getElementById("app").style.display="block";
+document.getElementById(
+"loginScreen"
+).style.display="none";
+
+document.getElementById(
+"app"
+).style.display="block";
 
 }else{
 
@@ -117,22 +125,14 @@ document.createElement("div");
 categoryBlock.className =
 "category";
 
-const categoryTitle =
-document.createElement("div");
-
-categoryTitle.className =
-"categoryTitle";
-
-categoryTitle.innerText =
-category;
-
-categoryBlock.appendChild(
-categoryTitle
-);
+categoryBlock.innerHTML =
+'<div class="categoryTitle">'+
+category+
+'</div>';
 
 for(const brand in katalog[category]){
 
-let visible = false;
+let found=false;
 
 katalog[category][brand]
 .forEach(model=>{
@@ -143,37 +143,31 @@ model.toLowerCase()
 filter.toLowerCase()
 )
 ){
-visible = true;
+found=true;
 }
 
 });
 
-if(
-filter !== "" &&
-!visible
-){
+if(filter!=="" && !found){
 continue;
 }
 
 const brandDiv =
 document.createElement("div");
 
-brandDiv.className =
-"brand";
-
-brandDiv.innerText =
-brand;
+brandDiv.className="brand";
+brandDiv.innerText=brand;
 
 const modelsDiv =
 document.createElement("div");
 
-modelsDiv.className =
+modelsDiv.className=
 "brandModels";
 
-brandDiv.onclick = ()=>{
+brandDiv.onclick=()=>{
 
-modelsDiv.style.display =
-modelsDiv.style.display === "block"
+modelsDiv.style.display=
+modelsDiv.style.display==="block"
 ?
 "none"
 :
@@ -185,7 +179,7 @@ katalog[category][brand]
 .forEach(model=>{
 
 if(
-filter !== "" &&
+filter!=="" &&
 !model.toLowerCase()
 .includes(
 filter.toLowerCase()
@@ -197,46 +191,29 @@ return;
 const modelDiv =
 document.createElement("div");
 
-modelDiv.className =
-"model";
+modelDiv.className="model";
+modelDiv.innerText=model;
 
-modelDiv.innerText =
-model;
-
-modelDiv.onclick =
-(e)=>{
+modelDiv.onclick=(e)=>{
 
 e.stopPropagation();
 
-document
-.getElementById(
+document.getElementById(
 "breadcrumb"
-)
-.innerText =
-category +
-" / " +
-brand +
-" / " +
+).innerText=
+category+
+" / "+
+brand+
+" / "+
 model;
 
-document
-.getElementById(
+document.getElementById(
 "gallery"
-)
-.innerHTML =
-
+).innerHTML=
 `
-<div class="photo">
-${model}
-</div>
-
-<div class="photo">
-Fotografie 2
-</div>
-
-<div class="photo">
-Fotografie 3
-</div>
+<div class="photo">${model}</div>
+<div class="photo">Fotografie 2</div>
+<div class="photo">Fotografie 3</div>
 `;
 
 };
@@ -271,12 +248,10 @@ document
 .getElementById("search")
 .addEventListener(
 "input",
-(e)=>{
-
+e=>{
 renderMenu(
 e.target.value
 );
-
 }
 );
 
