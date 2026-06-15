@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Nebuď Lama!!</title>
 
 <link rel="stylesheet" href="style.css">
@@ -27,7 +28,7 @@ Privátní katalog
 id="password"
 class="passwordInput"
 type="password"
-placeholder="Zadej heslo">
+placeholder="Heslo">
 
 <button
 class="loginBtn"
@@ -50,10 +51,12 @@ NEBUĎ LAMA!!
 </div>
 
 <div class="searchBox">
+
 <input
 id="search"
 class="searchInput"
 placeholder="🔍 Hledat">
+
 </div>
 
 <div id="menu" class="menu"></div>
@@ -134,6 +137,43 @@ document.getElementById(
 const menu =
 document.getElementById("menu");
 
+function createGallery(category,brand,model){
+
+const gallery =
+document.getElementById("gallery");
+
+gallery.innerHTML="";
+
+for(let i=1;i<=30;i++){
+
+const number =
+String(i).padStart(2,"0");
+
+const imagePath =
+`images/${category}/${brand}/${model}/${number}.webp`;
+
+const img =
+document.createElement("img");
+
+img.src=imagePath;
+
+img.style.width="100%";
+img.style.height="320px";
+img.style.objectFit="cover";
+img.style.borderRadius="18px";
+
+img.onerror=()=>{
+
+img.remove();
+
+};
+
+gallery.appendChild(img);
+
+}
+
+}
+
 function renderMenu(filter=""){
 
 menu.innerHTML="";
@@ -176,12 +216,15 @@ const brandDiv=
 document.createElement("div");
 
 brandDiv.className="brand";
-brandDiv.innerHTML="▶ "+brand;
+
+brandDiv.innerHTML=
+"▶ "+brand;
 
 const models=
 document.createElement("div");
 
-models.className="brandModels";
+models.className=
+"brandModels";
 
 brandDiv.onclick=()=>{
 
@@ -211,6 +254,7 @@ const item=
 document.createElement("div");
 
 item.className="model";
+
 item.innerText=model;
 
 item.onclick=(e)=>{
@@ -219,8 +263,8 @@ e.stopPropagation();
 
 document
 .querySelectorAll(".model")
-.forEach(m=>
-m.classList.remove("active")
+.forEach(x=>
+x.classList.remove("active")
 );
 
 item.classList.add("active");
@@ -236,17 +280,11 @@ brand+
 " / "+
 model;
 
-document
-.getElementById(
-"gallery"
-)
-.innerHTML=
-`
-<div class="photo">${model}</div>
-<div class="photo">Foto 2</div>
-<div class="photo">Foto 3</div>
-<div class="photo">Foto 4</div>
-`;
+createGallery(
+category,
+brand,
+model
+);
 
 };
 
@@ -271,7 +309,9 @@ document
 .getElementById("search")
 .addEventListener(
 "input",
-e=>renderMenu(e.target.value)
+e=>renderMenu(
+e.target.value
+)
 );
 
 </script>
