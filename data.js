@@ -128,7 +128,7 @@ Mikiny:[
 "Tommy Hilfiger"
 ],
 
-"Tepláky / Soupravy":[
+"Tepláky - Soupravy":[
 "Eric Emanuel",
 "Essentials",
 "Lacoste",
