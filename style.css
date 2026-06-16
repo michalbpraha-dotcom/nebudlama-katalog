@@ -118,7 +118,6 @@ width:240px;
 background:var(--panel);
 border-right:1px solid rgba(255,255,255,.08);
 overflow-y:auto;
-flex-shrink:0;
 }
 
 .sidebarHeader{
@@ -236,8 +235,6 @@ justify-content:center;
 align-items:center;
 color:#777;
 border:1px dashed #444;
-text-align:center;
-padding:20px;
 }
 
 .galleryImage{
@@ -315,12 +312,8 @@ font-size:22px;
 grid-template-columns:1fr;
 }
 
-.photo{
-height:260px;
-}
-
 .galleryImage{
-height:auto;
+height:260px;
 }
 
 }
