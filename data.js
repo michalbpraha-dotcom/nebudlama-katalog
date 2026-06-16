@@ -65,7 +65,7 @@ Loewe:[
 "Nike Mind 001",
 "Nike OFF White kotníkové",
 "Nike V5 RNR",
-"OFF-WHITE Vulc Low",
+
 "Stussy x Air Zoom Spiridon Caged 2 Fossil"
 ],
 
