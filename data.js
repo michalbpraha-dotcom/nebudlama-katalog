@@ -145,7 +145,7 @@ Trička:[
 "Balenciaga",
 "BAPE",
 "Corteiz World Rules",
-"FI",
+"F1",
 "Gant",
 "Jil Sander",
 "Karl Lagerfeld",
