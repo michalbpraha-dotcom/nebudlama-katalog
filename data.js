@@ -153,7 +153,7 @@ Trička:[
 "Lacoste Polo",
 "Maison Margiela",
 "Moncler Polo",
-"Nike Nocta",
+
 "Ralph Lauren",
 "Tommy Hilfiger"
 ],
