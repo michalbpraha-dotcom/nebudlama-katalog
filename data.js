@@ -170,7 +170,7 @@ Trička:[
 "NBA Ponožky",
 "Nike Ponožky",
 "OFF White Trenky",
-"Ralph Lauren Trenky",
+"Ralph Lauren Ponožky",
 "Supreme Trenky",
 "Tommy Hilfiger Trenky"
 ],
