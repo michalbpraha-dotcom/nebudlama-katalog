@@ -161,7 +161,6 @@ Trička:[
 "Carhartt",
 "Essentials",
 "Lacoste",
-"Lee",
 "Nike Nocta",
 "Stussy"
 ],
