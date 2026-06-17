@@ -166,7 +166,6 @@ Trička:[
 "Trenky / Ponožky":[
 "Balenciaga Trenky",
 "Calvin Klein Trenky",
-"Calvin Klein Ponožky",
 "Lacoste Trenky",
 "NBA Ponožky",
 "Nike Ponožky",
