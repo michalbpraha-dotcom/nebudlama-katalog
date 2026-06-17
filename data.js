@@ -157,13 +157,13 @@ Trička:[
 "Tommy Hilfiger"
 ],
 
-"Kraťasy / Kalhoty":[
+"Kraťasy - Kalhoty":[
 "Carhartt",
 "Essentials",
 "Lacoste",
 ],
 
-"Trenky / Ponožky":[
+"Trenky - Ponožky":[
 "Balenciaga Trenky",
 "Calvin Klein Trenky",
 "Lacoste Trenky",
@@ -185,14 +185,14 @@ Plavky:[
 
 OSTATNI:{
 
-"Bačkory / Pantofle":[
+"Bačkory - Pantofle":[
 "Balenciaga Pantofle",
 "Nike Bačkory",
 "Ralph Lauren",
 "Yeezy Slide"
 ],
 
-"Batohy / Tašky":[
+"Batohy - Tašky":[
 "Adidas",
 "BAPE",
 "Carhartt",
@@ -209,7 +209,7 @@ Pásky:[
 "Dickies"
 ],
 
-"Skateboardy / Prkna":[
+"Skateboardy - Prkna":[
 "BAPE",
 "Kaws",
 "Tom and Jerry",
