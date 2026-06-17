@@ -186,7 +186,6 @@ Plavky:[
 OSTATNI:{
 
 "Bačkory - Pantofle":[
-"Balenciaga Pantofle",
 "Nike Bačkory",
 "Ralph Lauren",
 "Yeezy Slide"
