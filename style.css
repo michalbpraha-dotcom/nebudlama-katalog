@@ -339,12 +339,8 @@ border-radius:20px;
 box-shadow:0 0 30px rgba(168,85,247,.25);
 max-width:none;
 }
+
 #gallery:has(.welcomeScreen){
 display:block;
-}
-
-#gallery:has(.welcomeScreen) .welcomeImage{
 width:100%;
-height:auto;
-display:block;
 }
