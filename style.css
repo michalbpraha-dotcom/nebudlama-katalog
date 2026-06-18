@@ -317,3 +317,23 @@ height:260px;
 }
 
 }
+.galleryImage{
+height:260px;
+}
+
+}
+
+.welcomeScreen{
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.welcomeImage{
+max-width:100%;
+max-height:75vh;
+border-radius:20px;
+box-shadow:0 0 30px rgba(168,85,247,.25);
+}
