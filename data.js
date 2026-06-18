@@ -88,6 +88,7 @@ Salomon:[
 "MM6 Maison Margiela x Salomon X-ALP",
 "Salomon XT-Quest",
 "Salomon XT-6",
+"Salomon XT-Whisper",
 ],
 
 Timberland:[
