@@ -186,7 +186,7 @@ Plavky:[
 
 "Skateboard-Prkna":{
 
-
+],
 
   
 "Bačkory - Pantofle":[
