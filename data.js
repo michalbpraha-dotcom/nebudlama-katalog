@@ -184,6 +184,16 @@ Plavky:[
 
 },
 
+Skateboard-prkna:{
+
+"Bačkory - Pantofle":[
+"Nike Bačkory",
+"Ralph Lauren",
+"Yeezy Slide"
+],
+
+
+  
 OSTATNI:{
 
 "Bačkory - Pantofle":[
