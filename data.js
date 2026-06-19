@@ -179,7 +179,7 @@ Plavky:[
 "Dsquared2",
 "Ralph Lauren",
 "Tommy Hilfiger"
-]
+],
 
 "Skateboardy-prkna":[
 "Bape",
