@@ -184,7 +184,7 @@ Plavky:[
 
 },
 
-Skateboard-prkna:{
+Skateboard-Prkna:{
 
 "Bačkory - Pantofle":[
 "Nike Bačkory",
@@ -219,12 +219,6 @@ Pásky:[
 "Dickies"
 ],
 
-"Skateboardy - Prkna":[
-"BAPE",
-"Kaws",
-"Tom and Jerry",
-"Vans"
-],
 
 Brýle:[
 "Ray-Ban"
