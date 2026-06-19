@@ -182,6 +182,24 @@ Plavky:[
 ]
 
 },
+"Skateboardy-prkna":{
+
+  Bape:[
+    "Bape"
+  ],
+
+  Vans:[
+    "Vans"
+  ],
+
+  Kaws:[
+    "Kaws"
+  ],
+
+  "Tom and Jerry":[
+    "Tom and Jerry"
+  ]
+},
 
 OSTATNI:{
 
