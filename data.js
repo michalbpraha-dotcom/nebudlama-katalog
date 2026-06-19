@@ -213,6 +213,5 @@ Termosky:[
 "Stanley"
 ]
 
-}
 
 };
