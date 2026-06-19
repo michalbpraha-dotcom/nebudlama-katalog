@@ -183,12 +183,12 @@ Trička:[
 
 },
 
-Skateboardy:{
-"Bape":[
+Skateboardy:[
+"Bape",
 "Vans",
 "Kaws"
 ],
-},  
+},
 
 
 
