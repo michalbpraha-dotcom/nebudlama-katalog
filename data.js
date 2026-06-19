@@ -136,8 +136,7 @@ Mikiny:[
 "Nike Sportswear Tech Fleece",
 "Nike Tepláky",
 "Nocta",
-"Polo Ralph Lauren",
-"Tommy Hilfiger"
+"Polo Ralph Lauren"
 ],
 
 Trička:[
