@@ -180,10 +180,26 @@ Trička:[
 "Ralph Lauren",
 "Tommy Hilfiger"
 ],
-
 },
 
 
+  
+Skateboardy:{
+"Bape":[
+"Bape"
+],
+
+"Vans":[
+"Vans"
+],
+
+"Kaws":[
+"Kaws"
+]
+},
+
+
+  
 OSTATNI:{
 "Bačkory - Pantofle":[
 "Nike Bačkory",
