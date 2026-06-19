@@ -182,10 +182,10 @@ Plavky:[
 ]
 
 "Skateboardy-prkna":[
-  "Bape",
-  "Vans",
-  "Kaws",
-  "Tom and Jerry",
+"Bape",
+"Vans",
+"Kaws",
+"Tom and Jerry",
 ],
   
 
