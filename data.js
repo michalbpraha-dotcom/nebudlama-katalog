@@ -73,7 +73,7 @@ Loewe:[
 "New Balance 1000",
 "New Balance 574 Legacy Stone Island",
 "New Balance 9060",
-"New Balance 997",
+"New Balance 997"
 ],
 
 "On Running":[
@@ -160,7 +160,7 @@ Trička:[
 "Kraťasy - Kalhoty":[
 "Carhartt",
 "Essentials",
-"Lacoste",
+"Lacoste"
 ],
 
 "Trenky - Ponožky":[
