@@ -120,7 +120,6 @@ Bundy:[
 Mikiny:[
 "BAPE",
 "Carhartt",
-"Essentials",
 "Gant",
 "GAP",
 "Jil Sander",
