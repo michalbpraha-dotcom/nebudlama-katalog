@@ -175,7 +175,7 @@ Trička:[
 "Tommy Hilfiger Trenky"
 ],
 
-Plavky:[
+"Plavky":[
 "Dsquared2",
 "Ralph Lauren",
 "Tommy Hilfiger"
