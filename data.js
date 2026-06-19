@@ -136,7 +136,6 @@ Mikiny:[
 "Nike Sportswear Tech Fleece",
 "Nike Tepláky",
 "Nocta",
-"Patagonia",
 "Polo Ralph Lauren",
 "Tommy Hilfiger"
 ],
