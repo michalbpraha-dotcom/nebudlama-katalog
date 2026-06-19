@@ -182,24 +182,14 @@ Plavky:[
 ]
 
 },
-"Skateboardy-prkna":{
 
-  Bape:[
-    "Bape"
-  ],
-
-  Vans:[
-    "Vans"
-  ],
-
-  Kaws:[
-    "Kaws"
-  ],
-
-  "Tom and Jerry":[
-    "Tom and Jerry"
-  ]
-},
+"Skateboardy-prkna":[
+  "Bape",
+  "Vans",
+  "Kaws",
+  "Tom and Jerry"
+],
+  
 
 OSTATNI:{
 
