@@ -183,19 +183,7 @@ Trička:[
 
 },
 
-"Skateboardy":[
-"Bape",
-"Vans",
-"Kaws"
-],
 
-},
-
-
-
-
-  
-  
 OSTATNI:{
 "Bačkory - Pantofle":[
 "Nike Bačkory",
