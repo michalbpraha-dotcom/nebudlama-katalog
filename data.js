@@ -179,9 +179,7 @@ Trička:[
 "Dsquared2",
 "Ralph Lauren",
 "Tommy Hilfiger"
-]
-
-
+],
 
 "Skateboardy - Prkna":[
 "Bape",
