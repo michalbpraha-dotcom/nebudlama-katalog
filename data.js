@@ -179,7 +179,9 @@ Trička:[
 "Dsquared2",
 "Ralph Lauren",
 "Tommy Hilfiger"
-],
+]
+
+},
 
 OSTATNI:{
 "Bačkory - Pantofle":[
