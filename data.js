@@ -183,14 +183,6 @@ Trička:[
 
 },
 
-Skateboardy:{
-"Bape"
-],
-},
-
-
-
-  
 
 OSTATNI:{
 "Bačkory - Pantofle":[
