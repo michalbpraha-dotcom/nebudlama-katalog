@@ -116,6 +116,11 @@ class="welcomeImage">
 ❮
 </div>
 
+
+<a id="downloadBtn" download>
+    ⬇ Stáhnout
+</a>
+  
 <img id="lightboxImage">
 
 <div class="navBtn nextBtn" onclick="nextImage()">
@@ -287,8 +292,14 @@ document
 .getElementById("lightboxImage")
 .src=currentImages[currentIndex];
 
+ document
+.getElementById("downloadBtn")
+.href=currentImages[currentIndex];
+  
 }
 
+
+  
 function prevImage(){
 
 if(currentImages.length===0) return;
