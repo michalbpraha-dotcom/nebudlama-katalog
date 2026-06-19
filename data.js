@@ -182,11 +182,6 @@ Plavky:[
 "Tommy Hilfiger"
 ]
 
-},
-
-"Skateboard-Prkna":{
-
-],
 
   
 "Bačkory - Pantofle":[
