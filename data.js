@@ -86,9 +86,8 @@ Puma:[
 
 Salomon:[
 "MM6 Maison Margiela x Salomon X-ALP",
-"Salomon XT-Quest",
-"Salomon XT-6",
-"Salomon XT-Whisper",
+"Salomon XT-6 Copen Blue",
+"Salomon Trekking"
 ],
 
 Timberland:[
@@ -182,16 +181,8 @@ Plavky:[
 "Tommy Hilfiger"
 ]
 
+},
 
-  
-"Bačkory - Pantofle":[
-"Nike Bačkory",
-"Ralph Lauren",
-"Yeezy Slide"
-],
-
-
-  
 OSTATNI:{
 
 "Bačkory - Pantofle":[
@@ -217,6 +208,12 @@ Pásky:[
 "Dickies"
 ],
 
+"Skateboardy - Prkna":[
+"BAPE",
+"Kaws",
+"Tom and Jerry",
+"Vans"
+],
 
 Brýle:[
 "Ray-Ban"
