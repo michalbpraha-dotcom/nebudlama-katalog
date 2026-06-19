@@ -181,12 +181,6 @@ Trička:[
 "Tommy Hilfiger"
 ],
 
-"Skateboardy - Prkna":[
-"Bape",
-"Kaws",
-"Vans"
-],
-
   
 OSTATNI:{
 "Bačkory - Pantofle":[
