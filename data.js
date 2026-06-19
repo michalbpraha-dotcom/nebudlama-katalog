@@ -181,12 +181,7 @@ Plavky:[
 "Tommy Hilfiger"
 ],
 
-"Skateboardy-prkna":[
-"Bape",
-"Vans",
-"Kaws",
-"Tom and Jerry",
-],
+
   
 
 OSTATNI:{
