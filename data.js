@@ -181,14 +181,23 @@ Trička:[
 "Tommy Hilfiger"
 ],
 
-
 },
 
 Skateboardy:{
-"Bape":[
-"Vans",
-"Kaws",
+
+Bape:[
+"Bape"
 ],
+
+Vans:[
+"Vans"
+],
+
+Kaws:[
+"Kaws"
+]
+
+},
 
 
 
