@@ -258,15 +258,20 @@ images/${folderCategory}/${brand}/${model}/01.webp
 
 function openLightbox(index){
 
-currentIndex=index;
+    currentIndex=index;
 
-document
-.getElementById("lightbox")
-.classList.add("active");
+    document
+    .getElementById("lightbox")
+    .classList.add("active");
 
-document
-.getElementById("lightboxImage")
-.src=currentImages[currentIndex];
+    document
+    .getElementById("lightboxImage")
+    .src=currentImages[currentIndex];
+
+    document
+    .getElementById("downloadBtn")
+    .href=currentImages[currentIndex];
+
 
 }
 
