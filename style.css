@@ -343,6 +343,23 @@ display:block;
 width:100%;
 }
 
+#downloadBtn{
+    position:absolute;
+    top:20px;
+    right:100px;
+    background:#a855f7;
+    color:white;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:10px;
+    font-weight:bold;
+    z-index:1002;
+}
+
+#downloadBtn:hover{
+    opacity:.9;
+}
+
 .breadcrumb{
     display:none;
 }
