@@ -184,9 +184,9 @@ Trička:[
 },
 
 Skateboardy:{
-"Bape":[
+"Bape",
 "Vans",
-"Kaws",
+"Kaws"
 ],
 
 },  
