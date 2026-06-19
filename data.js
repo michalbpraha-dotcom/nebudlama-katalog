@@ -86,7 +86,7 @@ Puma:[
 
 Salomon:[
 "MM6 Maison Margiela x Salomon X-ALP",
-"Salomon XT-6 Copen Blue",
+"Salomon XT-6",
 "Salomon Trekking"
 ],
 
