@@ -226,13 +226,6 @@ Pásky:[
 "Dickies"
 ],
 
-"Skateboardy - Prkna":[
-"BAPE",
-"Kaws",
-"Tom and Jerry",
-"Vans"
-],
-
 Brýle:[
 "Ray-Ban"
 ],
