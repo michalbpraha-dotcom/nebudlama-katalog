@@ -57,7 +57,7 @@ Loewe:[
 "Air Jordan 4 Retro OG SP Nigel Sylvester Brick by Brick",
 "Air Jordan 4RM x Nigel Sylvester Pro Green",
 "Air Max 1",
-"Air Max 90",
+"Nike Air Max 90",
 "Air Max 270",
 "Jordan 1 Mid French Blue",
 "Kobe 8 Protro",
