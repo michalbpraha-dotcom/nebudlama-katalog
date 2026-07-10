@@ -128,6 +128,7 @@ Mikiny:[
 "Jil Sander",
 "Jordan Supreme",
 "Ralph Lauren",
+"Red Bull",  
 "Tommy Hilfiger"
 ],
 
