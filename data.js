@@ -108,7 +108,6 @@ Vans:[
 TEXTIL:{
 
 
-
 Bundy:[
 "Arc'teryx",
 "BAPE Coca-Cola",
