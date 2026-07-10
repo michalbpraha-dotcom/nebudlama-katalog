@@ -107,11 +107,6 @@ Vans:[
 
 TEXTIL:{
 
-"Red Bull-McLaren Racing":[
-
-"Polo Trička":[
-"Polo Trička"
-],
 
 
 Bundy:[
