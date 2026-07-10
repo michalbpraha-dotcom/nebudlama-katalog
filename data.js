@@ -134,7 +134,7 @@ Mikiny:[
 "Eric Emanuel",
 "Essentials",
 "Lacoste",
-"Lacoste kraťasy",
+
 "Nike Paris Saint-Germain",
 "Nike Sportswear Tech Fleece",
 "Nike Tepláky",
