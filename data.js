@@ -157,6 +157,7 @@ Trička:[
 "Maison Margiela",
 "Moncler Polo",
 "Ralph Lauren",
+"Red Bull",
 "Tommy Hilfiger"
 ],
 
