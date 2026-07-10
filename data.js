@@ -162,7 +162,7 @@ Trička:[
 "Carhartt",
 "Essentials",
 "Lacoste"
-"Lacoste Set"
+
 ],
 
 "Trenky - Ponožky":[
