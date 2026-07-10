@@ -161,8 +161,8 @@ Trička:[
 "Kraťasy - Kalhoty":[
 "Carhartt",
 "Essentials",
-"Lacoste"
-
+"Lacoste",
+"Lacoste Set"
 ],
 
 "Trenky - Ponožky":[
