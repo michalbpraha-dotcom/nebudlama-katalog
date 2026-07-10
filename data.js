@@ -111,7 +111,7 @@ TEXTIL:{
 
 "Polo Trička":[
 "Polo Trička"
-]
+],
 
 
 Bundy:[
