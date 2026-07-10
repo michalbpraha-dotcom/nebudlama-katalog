@@ -107,7 +107,7 @@ Vans:[
 
 TEXTIL:{
 
-"Red Bull-McLaren Racing":{
+"Red Bull-McLaren Racing":[
 
 "Polo Trička":[
 "Polo Trička"
