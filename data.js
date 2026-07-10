@@ -113,9 +113,6 @@ TEXTIL:{
 "Polo Trička"
 ]
 
-},
-
-
 
 Bundy:[
 "Arc'teryx",
