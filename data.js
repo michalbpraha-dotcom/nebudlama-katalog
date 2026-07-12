@@ -101,6 +101,7 @@ Salomon:[
 "MM6 Maison Margiela x Salomon X-ALP",
 "Salomon XT-6",
 "Salomon XT-Quest",
+"Salomon XT-QUEST 2.0",
 "Salomon XT-Whisper"
 ],
 
