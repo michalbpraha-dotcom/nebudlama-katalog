@@ -56,6 +56,7 @@ Lacoste:[
 
 Loewe:[
 "Loewe x On Running Cloud Solo"
+"Loewe Flow Runner"    
 ],
 
 "Nike":[
