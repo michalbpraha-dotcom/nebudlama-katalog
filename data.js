@@ -224,6 +224,7 @@ OSTATNI:{
 ],
 
 "Batohy - Tašky":[
+"Arc'teryx Mantis 20 Backpack",    
 "Adidas",
 "BAPE",
 "Carhartt",
