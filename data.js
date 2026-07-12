@@ -40,6 +40,11 @@ Dior:[
 "Kapri Iconic"
 ],
 
+
+"Loro Piana":[
+"Loro Piana"
+],
+
 Lacoste:[
 "Powercourt"
 ],
