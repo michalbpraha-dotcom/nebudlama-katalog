@@ -172,6 +172,7 @@ Trička:[
 ],
 
 "Kraťasy - Kalhoty":[
+"Nike Tech Fleece Shorts",    
 "Carhartt",
 "Essentials",
 "Lacoste",
