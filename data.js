@@ -1,6 +1,19 @@
 const katalog = {
 
 
+NOVINKY: {
+
+    "Novinky": [
+      "Nike Air Max 90",
+      "Adidas Samba OG",
+      "Asics Gel-NYC"
+    ]
+
+  },
+
+    
+
+
 OBUV:{
 
 "Limitované edice":[
