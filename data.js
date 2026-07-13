@@ -6,7 +6,7 @@ NOVINKY: {
     "Novinky": [
       "Nike Air Max 90",
       "Lacoste Polo trička",
-      "Asics Gel-NYC"
+      "Nike Air Jordan 6 Retro SP"
     ]
 
   },
