@@ -5,7 +5,7 @@ NOVINKY: {
 
     "Novinky": [
       "Nike Air Max 90",
-      "Adidas Samba OG",
+      "Lacoste Polo trička",
       "Asics Gel-NYC"
     ]
 
