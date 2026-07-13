@@ -1,11 +1,11 @@
 const katalog = {
 
-NOVINKY: {
+NOVINKY:{
 
-"Novinky": [
+"Novinky":[
 "Nike Air Max 90"
 
-],        
+],     
     
     
 OBUV:{
