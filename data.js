@@ -2,6 +2,13 @@ const katalog = {
 
 OBUV:{
 
+"Limitované edice":[
+"Pharrell x AD Adistar Jellyfish",
+],
+
+
+
+    
 Asics:[
 "Asics Gel-NYC"
 ],
