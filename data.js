@@ -4,7 +4,8 @@ OBUV:{
 
 "Limitované edice":[
 "Pharrell x AD Adistar Jellyfish",
-"Air Jordan 4 Retro x KAWS"
+"Air Jordan 4 Retro x KAWS",
+"Jordan 4 Retro Pizza"
 
     
 ],
