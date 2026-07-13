@@ -2,6 +2,11 @@ const katalog = {
 
 OBUV:{
 
+Asics:[
+"Asics Gel-NYC"
+],
+
+    
 Adidas:[
 "Bad Bunny x Gazelle Indoor San Juan",
 "Campus",
