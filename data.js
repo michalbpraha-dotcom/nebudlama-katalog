@@ -1,7 +1,6 @@
 const katalog = {
 
 
-    
 OBUV:{
 
 "Limitované edice":[
