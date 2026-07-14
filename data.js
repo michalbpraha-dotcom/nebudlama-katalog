@@ -162,7 +162,8 @@ Vans:[
 OUTDOOR: {
 
     "Outdoor": [
-      "Hoka One One Tor Ultra Low", 
+      "Hoka One One Tor Ultra Low",
+      "The North Face Chilkat",
       "The North Face Offtrail Hike GORE-TEX"
     ]
 
