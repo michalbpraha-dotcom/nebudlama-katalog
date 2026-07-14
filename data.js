@@ -163,8 +163,7 @@ OUTDOOR: {
 
     "Outdoor": [
       "Hoka One One Tor Ultra Low", 
-    
-      "Vans Old Skool New"
+      "The North Face Offtrail Hike GORE-TEX"
     ]
 
   },
