@@ -182,7 +182,7 @@ Mikiny:[
 "Lacoste",
 "Nike Tech Fleece",
 "Nike Paris Saint-Germain",
-"Nike Sportswear Tech Fleece New",
+"Nike Tech Fleece New",
 "Nike Tepláky",
 "Nocta",
 "Polo Ralph Lauren"
