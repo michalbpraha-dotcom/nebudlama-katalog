@@ -159,7 +159,7 @@ Vans:[
 },
 
 
-OUTDOOR OBUV: {
+OUTDOOR: {
 
     "Outdoor": [
       "Hoka One One Tor Ultra Low", 
