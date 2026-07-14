@@ -158,6 +158,24 @@ Vans:[
 
 },
 
+
+OUTDOOR: {
+
+    "Outdoor": [
+      "Hoka One One Tor Ultra Low", 
+    
+      "Vans Old Skool New"
+    ]
+
+  },
+
+
+
+
+
+
+    
+
 TEXTIL:{
 
 
