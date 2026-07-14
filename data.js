@@ -46,7 +46,8 @@ Adidas:[
 
 Balenciaga:[
 "Balenciaga 2.0",
-"Balenciaga Track 3"
+"Balenciaga Track 3",
+"Balenciaga Paris sneakers"
 ],
 
 Converse:[
