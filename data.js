@@ -6,7 +6,8 @@ NOVINKY: {
     "Novinky": [
       "Nike Air Max 90",
       "Lacoste Polo trička",
-      "Nike Air Jordan 6 Retro SP"
+      "Nike Air Jordan 6 Retro SP",
+      "Nike Tech Fleece"
     ]
 
   },
@@ -179,7 +180,7 @@ Mikiny:[
 "Eric Emanuel",
 "Essentials",
 "Lacoste",
-
+"Nike Tech Fleece",
 "Nike Paris Saint-Germain",
 "Nike Sportswear Tech Fleece",
 "Nike Tepláky",
