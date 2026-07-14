@@ -180,7 +180,7 @@ Mikiny:[
 "Eric Emanuel",
 "Essentials",
 "Lacoste",
-"Nike Tech Fleece",
+"Nike Sportswear Tech Fleece",
 "Nike Paris Saint-Germain",
 "Nike Tech Fleece New",
 "Nike Tepláky",
