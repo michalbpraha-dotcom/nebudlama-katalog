@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Air Max 270 Premium",
       "Balenciaga Paris sneakers",
       "Nike Air Max 90",
       "Lacoste Polo trička",
@@ -95,6 +96,7 @@ Loewe:[
 ],
 
 "Nike":[
+"Air Max 270 Premium",
 "Air Force 1 Supreme",
 "Air Jordan 4",
 "Air Jordan 4 Kaws",
