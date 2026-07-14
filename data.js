@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Air Jordan 11 Retro H-Town", 
       "Air Max 270 Premium",
       "Balenciaga Paris sneakers",
       "Nike Air Max 90",
