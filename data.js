@@ -8,6 +8,7 @@ NOVINKY: {
       "Air Max 270 Premium",
       "Balenciaga Paris sneakers",
       "Hoka One One Tor Ultra Low",
+      "New Balance 1906",
       "Nike Air Max 90",
       "Lacoste Polo trička",
       "Nike Air Jordan 6 Retro SP",
@@ -124,6 +125,7 @@ Loewe:[
 
 "New Balance":[
 "New Balance 1000",
+"New Balance 1906",
 "New Balance 574 Legacy Stone Island",
 "New Balance 9060",
 "New Balance 997"
