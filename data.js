@@ -7,6 +7,7 @@ NOVINKY: {
       "Air Jordan 11 Retro H-Town", 
       "Air Max 270 Premium",
       "Balenciaga Paris sneakers",
+      "Hoka One One Tor Ultra Low",
       "Nike Air Max 90",
       "Lacoste Polo trička",
       "Nike Air Jordan 6 Retro SP",
