@@ -181,8 +181,9 @@ Mikiny:[
 "Essentials",
 "Lacoste",
 "Nike Sportswear Tech Fleece",
-"Nike Paris Saint-Germain",
 "Nike Tech Fleece New",
+"Nike Paris Saint-Germain",
+
 "Nike Tepláky",
 "Nocta",
 "Polo Ralph Lauren"
