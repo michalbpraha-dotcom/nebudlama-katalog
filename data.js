@@ -8,7 +8,8 @@ NOVINKY: {
       "Nike Air Max 90",
       "Lacoste Polo trička",
       "Nike Air Jordan 6 Retro SP",
-      "Nike Tech Fleece New"
+      "Nike Tech Fleece New",
+      "Vans Old Skool New"
     ]
 
   },
@@ -146,7 +147,8 @@ Timberland:[
 ],
 
 Vans:[
-"Vans Knu Skool"
+   "Vans Knu Skool",
+   "Vans Old Skool New" 
 ]
 
 },
