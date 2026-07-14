@@ -7,7 +7,7 @@ NOVINKY: {
       "Nike Air Max 90",
       "Lacoste Polo trička",
       "Nike Air Jordan 6 Retro SP",
-      "Nike Tech Fleece"
+      "Nike Tech Fleece New"
     ]
 
   },
@@ -182,7 +182,7 @@ Mikiny:[
 "Lacoste",
 "Nike Tech Fleece",
 "Nike Paris Saint-Germain",
-"Nike Sportswear Tech Fleece",
+"Nike Sportswear Tech Fleece New",
 "Nike Tepláky",
 "Nocta",
 "Polo Ralph Lauren"
