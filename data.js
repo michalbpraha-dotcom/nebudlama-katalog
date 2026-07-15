@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Supreme teplákovka",
       "Nike Air Max 1-97 Sean Wotherspoon",
       "Nike Kobe 9 Protro",  
       "Air Jordan 11 Retro H-Town", 
@@ -217,7 +218,7 @@ Mikiny:[
 "Nike Sportswear Tech Fleece",
 "Nike Tech Fleece New",
 "Nike Paris Saint-Germain",
-
+"Supreme teplákovka",
 "Nike Tepláky",
 "Nocta",
 "Polo Ralph Lauren"
