@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "KITH Corduroy Multi Pocket Cargo Pants",
       "Stüssy World Tour Crew",
       "Polo triko Nike Nocta",
       "Fear of God Essentials Tote Bag",
@@ -247,6 +248,7 @@ Trička:[
 ],
 
 "Kraťasy - Kalhoty":[
+"KITH Corduroy Multi Pocket Cargo Pants",
 "Nike Tech Fleece Shorts",    
 "Carhartt",
 "Essentials",
