@@ -5,6 +5,7 @@ NOVINKY: {
 
     "Novinky": [
       "Nike Air Max 1-97 Sean Wotherspoon",
+      "Nike Kobe 9 Protro",  
       "Air Jordan 11 Retro H-Town", 
       "Air Max 270 Premium",
       "Balenciaga Paris sneakers",
@@ -115,6 +116,7 @@ Loewe:[
 "Air Max 270",
 "Jordan 1 Mid French Blue",
 "Kobe 8 Protro",
+"Nike Kobe 9 Protro",
 "Nike Air Zoom",
 "Nike Levi's",
 "Nike Mind 001",
