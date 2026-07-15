@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Nike Air Max 1-97 Sean Wotherspoon",
       "Air Jordan 11 Retro H-Town", 
       "Air Max 270 Premium",
       "Balenciaga Paris sneakers",
@@ -99,6 +100,7 @@ Loewe:[
 ],
 
 "Nike":[
+"Nike Air Max 1-97 Sean Wotherspoon",
 "Air Jordan 11 Retro H-Town",
 "Air Max 270 Premium",
 "Air Force 1 Supreme",
