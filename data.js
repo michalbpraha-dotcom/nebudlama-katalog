@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Fear of God Essentials Tote Bag",
       "Supreme teplákovka",
       "Nike Air Max 1-97 Sean Wotherspoon",
       "Nike Kobe 9 Protro",  
@@ -294,6 +295,7 @@ OSTATNI:{
 ],
 
 "Batohy - Tašky":[
+"Fear of God Essentials Tote Bag",
 "Arc'teryx Mantis 20 Backpack",    
 "Adidas",
 "BAPE",
