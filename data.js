@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Polo triko Nike Nocta",
       "Fear of God Essentials Tote Bag",
       "Supreme teplákovka",
       "Nike Air Max 1-97 Sean Wotherspoon",
@@ -226,6 +227,7 @@ Mikiny:[
 ],
 
 Trička:[
+"Polo triko Nike Nocta",
 "Balenciaga",
 "BAPE",
 "Corteiz World Rules",
