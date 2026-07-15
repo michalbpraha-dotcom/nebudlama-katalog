@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Stüssy World Tour Crew",
       "Polo triko Nike Nocta",
       "Fear of God Essentials Tote Bag",
       "Supreme teplákovka",
@@ -202,6 +203,7 @@ Bundy:[
 ],
 
 Mikiny:[
+"Stüssy World Tour Crew",
 "BAPE",
 "Carhartt",
 "Gant",
