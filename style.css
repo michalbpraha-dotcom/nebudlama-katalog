@@ -363,3 +363,59 @@ width:100%;
 .breadcrumb{
     display:none;
 }
+
+
+
+/* ===========================
+   MOBILNÍ VERZE
+   =========================== */
+@media (max-width:900px){
+
+body{
+    overflow:auto;
+}
+
+#app{
+    height:auto;
+    min-height:100vh;
+}
+
+.layout{
+    display:flex;
+    flex-direction:column;
+    height:auto;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:100%;
+    height:auto;
+    max-height:45vh;
+    border-right:none;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    overflow-y:auto;
+}
+
+.content{
+    flex:none;
+    width:100%;
+    height:auto;
+    overflow:visible;
+    padding:15px;
+}
+
+.topbar{
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.gallery{
+    grid-template-columns:1fr;
+}
+
+.galleryImage{
+    height:auto;
+    min-height:260px;
+}
+
+}
