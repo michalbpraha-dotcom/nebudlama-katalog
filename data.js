@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Carhartt kraťasy",
       "Air Jordan 1 Retro Low OG Zion Williamson Voodoo",
       "KITH Corduroy Multi Pocket Cargo Pants",
       "Stüssy World Tour Crew",
@@ -250,6 +251,8 @@ Trička:[
 ],
 
 "Kraťasy - Kalhoty":[
+    
+"Carhartt kraťasy",
 "KITH Corduroy Multi Pocket Cargo Pants",
 "Nike Tech Fleece Shorts",    
 "Carhartt",
