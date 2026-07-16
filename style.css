@@ -298,24 +298,7 @@ left:20px;
 right:20px;
 }
 
-.breadcrumb{
-font-size:22px;
-}
 
-.gallery{
-grid-template-columns:1fr;
-}
-
-.galleryImage{
-height:260px;
-}
-
-}
-.galleryImage{
-height:260px;
-}
-
-}
 
 .welcomeScreen{
 width:100%;
