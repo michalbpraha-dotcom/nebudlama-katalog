@@ -46,23 +46,13 @@ Vstoupit
 
 <div id="app">
 
-<div id="overlay"></div>
-
 <div class="layout">
 
 <div class="sidebar">
 
 <div class="sidebarHeader">
-
-<button id="menuToggle" class="menuToggle">
-☰
-</button>
-
 NEBUĎ LAMA!!
-
 </div>
-
-    
 
 <div class="searchBox">
 
@@ -181,26 +171,6 @@ document.getElementById(
 
 const menu =
 document.getElementById("menu");
-
-const sidebar =
-document.querySelector(".sidebar");
-
-const overlay =
-document.getElementById("overlay");
-
-
-const menuToggle =
-document.getElementById("menuToggle");
-
-menuToggle.onclick=()=>{
-
-sidebar.classList.toggle("open");
-overlay.classList.toggle("show");
-
-};
-    
-    
-    
 
 function getFolderCategory(category){
 
@@ -480,20 +450,6 @@ menu.appendChild(block);
 
 }
 
-sidebar.onclick=(e)=>{
-
-e.stopPropagation();
-
-};
-
-overlay.onclick=()=>{
-
-sidebar.classList.remove("open");
-overlay.classList.remove("show");
-
-};
-
-    
 renderMenu();
 
 document
@@ -535,4 +491,4 @@ closeLightbox();
 
 </body>
 </html>
-
+```
