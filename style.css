@@ -298,10 +298,24 @@ left:20px;
 right:20px;
 }
 
-@media(max-width:900px){
+@media (max-width:900px){
+
+.layout{
+display:block;
+height:auto;
+}
 
 .sidebar{
-width:220px;
+width:100%;
+height:auto;
+border-right:none;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.content{
+width:100%;
+height:auto;
+padding:15px;
 }
 
 .breadcrumb{
