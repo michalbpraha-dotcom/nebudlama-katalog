@@ -18,7 +18,7 @@ body{
 font-family:Segoe UI,Arial,sans-serif;
 background:var(--bg);
 color:var(--text);
-overflow-x:hidden;
+overflow:hidden;
 }
 
 #loginScreen{
@@ -298,39 +298,7 @@ left:20px;
 right:20px;
 }
 
-@media (max-width:900px){
-
-.layout{
-display:block;
-height:auto;
-}
-
-.sidebar{
-width:100%;
-height:auto;
-border-right:none;
-border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.content{
-width:100%;
-height:auto;
-padding:15px;
-}
-
-.breadcrumb{
-font-size:22px;
-}
-
-.gallery{
-grid-template-columns:1fr;
-}
-
-.galleryImage{
-height:260px;
-}
-
-}
+@media(max-width:900px){
 
 .sidebar{
 width:220px;
