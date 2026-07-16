@@ -365,38 +365,3 @@ width:100%;
 }
 
 
-@media (max-width: 900px){
-
-body{
-    overflow:auto;
-}
-
-.layout{
-    flex-direction:column;
-    height:auto;
-}
-
-.sidebar{
-    width:100%;
-    height:auto;
-    border-right:none;
-}
-
-.content{
-    width:100%;
-    padding:15px;
-}
-
-.topbar{
-    margin-bottom:15px;
-}
-
-.gallery{
-    grid-template-columns:1fr;
-}
-
-.galleryImage{
-    height:auto;
-}
-
-}
