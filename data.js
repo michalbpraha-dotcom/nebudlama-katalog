@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Nike funkční tričko",
       "Fear Of God Essentials kraťasy",
       "Bape kraťasy",
       "Carhartt kraťasy",
@@ -235,6 +236,7 @@ Mikiny:[
 ],
 
 Trička:[
+"Nike funkční tričko",
 "Polo triko Nike Nocta",
 "Balenciaga",
 "BAPE",
