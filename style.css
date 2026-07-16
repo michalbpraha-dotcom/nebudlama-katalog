@@ -347,8 +347,8 @@ width:100%;
 @media (max-width:900px){
 
 body{
-    overflow-y:auto;
     overflow-x:hidden;
+    overflow-y:auto;
 }
 
 #app{
@@ -358,16 +358,22 @@ body{
 
 .layout{
     display:flex;
-    height:100vh;
+    flex-direction:column;
+    height:auto;
 }
 
 .sidebar{
     width:100%;
-    overflow-y:visible;
+    border-right:none;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    overflow-y:auto;
+    max-height:55vh;
 }
 
 .content{
     width:100%;
+    flex:none;
+    padding:15px;
     overflow:visible;
 }
 
@@ -378,7 +384,9 @@ body{
 }
 
 .gallery{
+    display:grid;
     grid-template-columns:1fr;
+    gap:15px;
 }
 
 .galleryImage{
@@ -387,5 +395,9 @@ body{
     object-fit:contain;
 }
 
+.welcomeImage{
+    width:100%;
+    height:auto;
 }
 
+}
