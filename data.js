@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Adidas batoh",
       "Carhartt WIP",
       "Nike funkční tričko",
       "Fear Of God Essentials kraťasy",
@@ -313,9 +314,11 @@ OSTATNI:{
 ],
 
 "Batohy - Tašky":[
+"Adidas batoh",
+"Adidas",
 "Fear of God Essentials Tote Bag",
 "Arc'teryx Mantis 20 Backpack",    
-"Adidas",
+
 "BAPE",
 "Carhartt",
 "Essentials Batohy",
