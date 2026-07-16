@@ -462,6 +462,20 @@ menu.appendChild(block);
 
 }
 
+sidebar.onclick=(e)=>{
+
+e.stopPropagation();
+
+};
+
+overlay.onclick=()=>{
+
+sidebar.classList.remove("open");
+overlay.classList.remove("show");
+
+};
+
+    
 renderMenu();
 
 document
