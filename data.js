@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Carhartt WIP",
       "Nike funkční tričko",
       "Fear Of God Essentials kraťasy",
       "Bape kraťasy",
@@ -210,6 +211,7 @@ Bundy:[
 ],
 
 Mikiny:[
+"Carhartt WIP",
 "Stüssy World Tour Crew",
 "BAPE",
 "Carhartt",
