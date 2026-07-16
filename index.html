@@ -182,6 +182,18 @@ document.querySelector(".sidebar");
 const overlay =
 document.getElementById("overlay");
 
+
+const menuToggle =
+document.getElementById("menuToggle");
+
+menuToggle.onclick=()=>{
+
+sidebar.classList.toggle("open");
+overlay.classList.toggle("show");
+
+};
+    
+    
     
 
 function getFolderCategory(category){
@@ -517,4 +529,4 @@ closeLightbox();
 
 </body>
 </html>
-```
+
