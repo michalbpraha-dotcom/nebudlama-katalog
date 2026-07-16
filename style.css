@@ -357,8 +357,8 @@ body{
 }
 
 .layout{
-    display:block;
-    height:auto;
+    display:flex;
+    height:100vh;
 }
 
 .sidebar{
