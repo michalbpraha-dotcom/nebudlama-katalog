@@ -365,3 +365,30 @@ width:100%;
 }
 
 
+.menuToggle{
+    display:none;
+}
+
+@media (max-width:900px){
+
+.menuToggle{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:42px;
+    height:42px;
+    margin-right:12px;
+    border:none;
+    border-radius:10px;
+    background:#232330;
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.sidebarHeader{
+    display:flex;
+    align-items:center;
+}
+
+}
