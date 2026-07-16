@@ -404,18 +404,21 @@ left:0;
 }
 
 .menuToggle{
-display:flex;
+display:flex !important;
+position:absolute;
+top:15px;
+left:15px;
+width:48px;
+height:48px;
 align-items:center;
 justify-content:center;
-width:44px;
-height:44px;
-margin-right:12px;
-border:none;
-border-radius:10px;
 background:#232330;
+border:none;
+border-radius:12px;
 color:#fff;
-font-size:26px;
+font-size:28px;
 cursor:pointer;
+z-index:2001;
 }
 
 .sidebarHeader{
