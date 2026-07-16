@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Air Jordan 1 Retro Low OG Zion Williamson Voodoo"
       "KITH Corduroy Multi Pocket Cargo Pants",
       "Stüssy World Tour Crew",
       "Polo triko Nike Nocta",
@@ -106,6 +107,7 @@ Loewe:[
 ],
 
 "Nike":[
+"Air Jordan 1 Retro Low OG Zion Williamson Voodoo",
 "Nike Air Max 1-97 Sean Wotherspoon",
 "Air Jordan 11 Retro H-Town",
 "Air Max 270 Premium",
