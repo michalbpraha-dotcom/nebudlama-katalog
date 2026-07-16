@@ -4,6 +4,7 @@ const katalog = {
 NOVINKY: {
 
     "Novinky": [
+      "Fear Of God Essentials kraťasy",
       "Bape kraťasy",
       "Carhartt kraťasy",
       "Air Jordan 1 Retro Low OG Zion Williamson Voodoo",
@@ -252,7 +253,7 @@ Trička:[
 ],
 
 "Kraťasy - Kalhoty":[
-
+"Fear Of God Essentials kraťasy",
 "Bape kraťasy",   
 "Carhartt kraťasy",
 "KITH Corduroy Multi Pocket Cargo Pants",
