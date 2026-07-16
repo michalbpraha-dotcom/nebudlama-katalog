@@ -375,22 +375,17 @@ body{
 
 .layout{
     display:flex;
-    flex-direction:column;
-    height:auto;
+    height:100vh;
 }
 
 .sidebar{
-    width:100%;
-    max-height:45vh;
+    width:240px;
     overflow-y:auto;
-    border-right:none;
-    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .content{
-    width:100%;
-    overflow:visible;
-    padding:15px;
+    flex:1;
+    overflow-y:auto;
 }
 
 .topbar{
